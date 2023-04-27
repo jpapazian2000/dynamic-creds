@@ -4,6 +4,9 @@
 # Data source used to get the project id programmatically.
 #
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/project
+provider "google" {
+   project = var.google_project
+}
 data "google_project" "current" {
 }
 
