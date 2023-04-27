@@ -14,7 +14,7 @@ data "google_project" "current" {
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_service_account
 resource "google_service_account" "secrets_engine" {
   account_id   = "hcp-vault-secrets-engine"
-  display_name = "HCP Vault Secrets Engine"
+  display_name = "HCP Vault Secrets-Engine"
 }
 
 # Updates the IAM policy to grant the service account permissions
